@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Asap">
+	<title>UDEMY-DATASET ANALYSIS</title>
+</head>
+
+<div class="jumbotron text-center">
+        <div class="container">
+            <h1>UDEMY Courses Dataset</h1>
+            <h2>Exploratory Data Analysis</h2>
+        </div>
+</div>
+
+<div class="container">
+        <!-- Dropped .page-header as, aside from the border, all its styles can be applied via utilities. -->
+        <h1>ABOUT
+            <small>The Project</small>
+        </h1>
+
+        <!-- TYPOGRAPHY -->
+
+        <!-- Main paragraph -->
+        <p class="lead">It is an endeavour to look into the statistics of various courses which the popular website UDEMY provides to its Users.</p>
+
+        <p>
+            Me and my team at ACM League of Codes had undertaken the task of delving what the current trend in Online Courses are amidst this Pandemic , is there an increase as compared to the previous years ? And , if so , which field/courses are the current rage amongst students. How much revenue Udemy has earned in the recent years and much more!!
+        </p>
+
+        <hr>
+</div>
+
+
+
+<div class="container">
+
+        <!-- GRIDS -->
+
+        <div class="row">
+
+            <!-- Added a new sm grid tier below 768px for more granular control. We now have xs, sm, md, lg, and xl. This also means every tier has been bumped up one level (so .col-md-6 in v3 is now .col-lg-6 in v4). -->
+
+            <div class="col-lg-5 col-md-4 col-sm-4">
+                <h2><u>Subject Analysis</u></h2>
+                <ul>
+                    <li>High Concentration of  Web Development and Business Finance courses</li>
+                    <li>Least amount courses are under the Graphic Design.</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <img src="./Analysis/Subject-Analysis.png">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <h2><u>Number of Paid vs. Unpaid Courses</u></h2>
+            <div class="col-lg-7">
+                <img src="./Analysis/Dist-Courses-Bar.png" width="85%">
+            </div>
+            <div class="col-lg-5">
+                <img src="./Analysis/Dist-Courses-Pie.png" width="65%" id="Dist-Courses-Pie">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <ul>
+                    <li>Most of the offered courses are paid. Only 8.43% are Free Courses.</li>
+                    <li>Authors prefer to get paid for the courses due to the time and resources they had invested.</li>
+                    <li>High Concentration of  Web Development and Business Finance courses</li>
+                    <li> Least amount courses are under the Graphic Design.</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <h2><u>Distribution of Courses by Level</u></h2>
+            <div class="col-lg-12">
+                <img src="./Analysis/Dist-Level-Bar.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul>
+                    <li>Regardless of the Subject there is high concentration on All level and Beginner level courses.</li>
+                    <li>Low concentration of Expert Level Courses compared to the Beginner and All Level courses .</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+
+            <!-- Added a new sm grid tier below 768px for more granular control. We now have xs, sm, md, lg, and xl. This also means every tier has been bumped up one level (so .col-md-6 in v3 is now .col-lg-6 in v4). -->
+
+            <div class="col-lg-6 col-md-4 col-sm-4">
+                <h2><u>User Preference Analysis</u></h2>
+                <img src="./Analysis/Subscription-Dist-Bar.png" width="100%" id="subs">
+            </div>
+            <div class="col-lg-6 col-md-4 col-sm-4" id="subs-text">
+                <ul>
+                    <li>Users have a High subject preference towards Web Development and even more so if it is Free.</li>
+                    <li>Graphic Design is the 2nd most Popular Courses followed by Business Finance.</li>
+                    <li>Musical Instruments have higher preference than Business Finance when it offered for free.</li>
+                    <li>Increasing more courses on Graphic Design would be profitable because of user preference.</li>
+                    <li>Despite Business Finance having a high concentration of courses. It is not popular by users.</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+
+            <!-- Added a new sm grid tier below 768px for more granular control. We now have xs, sm, md, lg, and xl. This also means every tier has been bumped up one level (so .col-md-6 in v3 is now .col-lg-6 in v4). -->
+
+            <div class="col-lg-6 col-md-4 col-sm-4">
+                <h2><u>User Preference Based on Difficulty</u></h2>
+                <ul id="user-level-text">
+                    <li>Users have preference over All levels and Beginner Category.</li>
+                    <li>Very Few People undertake Expert Courses maybe bacause they are generally Paid.</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-4 col-sm-4">
+                <img src="./Analysis/user-level-dist-bar.png" width="100%" id="user-level">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <h2><u>Revenue Made By Each Category</u></h2>
+            <div class="col-lg-7">
+                <img src="./Analysis/revenue-dist-bar.png" width="85%">
+            </div>
+            <div class="col-lg-5" id="revenue-text">
+                <ul>
+                    <li>We can clearly see that even though the Number of Paid Courses of Business Finance is more than that of Web Development , Web Development still has contributed more revenue to the Company Overall because of it's larger popularity amongst users. </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            
+            <div class="col-lg-6">
+                <h2><u>User Duration Preference</u></h2>
+                <img src="./Analysis/content-duration-scatter.png" width="85%">
+            </div>
+            <div class="col-lg-6">
+                <img src="./Analysis/reviews-scatter.png" width="75%" id="preference">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul>
+                    <li>Most Users Prefer the courses to have less duration.</li>
+                    <li>There is a linear relation  between Reviews and Subscribers.</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <h2><u>Time Series Analysis</u></h2>
+            <div class="col-lg-12">
+                <img src="./Analysis/courses-per-year-bar.png" id="year">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul>
+                    <li>The amount of  Web Development courses being upload has taken a huge leap in the year 2015.</li>
+                    <li>Web Development became the most uploaded course in 2016 surpassing Business Finance.</li>
+                    <li>Web Development seems to a slight decline in 2014.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <img src="./Analysis/time-analysis.png" id="year-line">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <h2 id="video-head"><u>For a More Detailed Explanation :</u></h2>
+            <div class="col-lg-12" id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2BD3xzdz-ZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer id="foot">
+        <p>Made by Ayush Paul and Team in guidance of ACM LOC Mentors</p>
+        <p>Find the Source Code on Our Github Page <a href="https://github.com/team-10-ACM-ML/Udemy_EDA"><img src="./Analysis/GitHub-Mark-Light-32px.png" width="1.5%"></a></p>
+    </footer>

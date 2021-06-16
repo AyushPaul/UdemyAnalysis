@@ -1,0 +1,67 @@
+#Dist-Courses-Pie
+{
+	margin-top: 73px;
+}
+
+#foot
+{
+	margin-top: 50px;
+	background-color:rgb(54, 51, 50);
+	padding:20px;
+}
+#foot p
+{
+	color: white;
+	text-align: center;
+}
+
+#subs
+{
+	margin-top: 25px;
+}
+
+#subs-text
+{
+	margin-top: 90px;
+}
+
+#user-level
+{
+	margin-top: 30px;
+}
+
+#user-level-text
+{
+	margin-top: 30px;
+}
+
+#revenue-text
+{
+	margin-top: 30px;
+}
+
+#preference
+{
+	margin-top:47px;
+}
+
+#year
+{
+	margin-left: 60px;
+}
+
+#year-line
+{
+	margin-left:160px;
+}
+
+#video
+{
+	margin-left:250px;
+}
+
+#video-head
+{
+	margin-left:300px;
+	margin-bottom:50px;
+}
